@@ -42,6 +42,3 @@ install(
     ${CMAKE_CURRENT_BINARY_DIR}/iterable-config-version.cmake
   DESTINATION lib/cmake/iterable
 )
-add_executable(iterable-main main.cc)
-
-target_link_libraries(iterable-main PRIVATE iterable)
