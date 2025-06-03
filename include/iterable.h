@@ -92,10 +92,10 @@ public:
     return begin();
   }
   auto end() {
-    return Iterator<Derived>(Cast(), Cast().GetLength());
+    return Iterator<Derived>(Cast(), Cast().Length());
   }
   auto end() const {
-    return Iterator<Derived>(Cast(), Cast().GetLength());
+    return Iterator<Derived>(Cast(), Cast().Length());
   }
   auto cend() const {
     return end();
