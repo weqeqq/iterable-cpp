@@ -78,6 +78,9 @@ public:
     bool operator<=(const Iterator &other) const {
       return !operator>(other);
     }
+    friend std::ptrdiff_t operator-(const Iterator &lhs, const Iterator &rhs) {
+      return lhs.current_ - rhs.current_;
+    }
   private:
     Self &self_; std::uint64_t current_;
   };
