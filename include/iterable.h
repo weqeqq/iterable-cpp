@@ -83,19 +83,19 @@ public:
   };
 
   auto begin() {
-    return Iterator<Derived>(Cast(), 0);
+    return Iterator(Cast(), 0);
   }
   auto begin() const {
-    return Iterator<Derived>(Cast(), 0);
+    return Iterator(Cast(), 0);
   }
   auto cbegin() const {
     return begin();
   }
   auto end() {
-    return Iterator<Derived>(Cast(), Cast().Length());
+    return Iterator(Cast(), Cast().Length());
   }
   auto end() const {
-    return Iterator<Derived>(Cast(), Cast().Length());
+    return Iterator(Cast(), Cast().Length());
   }
   auto cend() const {
     return end();
