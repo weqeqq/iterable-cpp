@@ -11,7 +11,7 @@ target_sources(iterable PUBLIC
   BASE_DIRS include
   FILES
   include/iterable/define.h
-  include/iterable/iterator.h
+  include/iterable/iterable.h
   include/iterable/iterator.h
 )
 install(
