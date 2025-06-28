@@ -1,7 +1,7 @@
 
 cmake_minimum_required(VERSION 3.23)
 
-project(iterable LANGUAGES CXX VERSION 0.1.0)
+project(iterable LANGUAGES CXX VERSION 0.2.0)
 
 add_library(iterable INTERFACE)
 add_library(iterable::iterable ALIAS iterable)
@@ -10,7 +10,9 @@ target_sources(iterable PUBLIC
   FILE_SET  HEADERS 
   BASE_DIRS include
   FILES
-  include/iterable.h
+  include/iterable/define.h
+  include/iterable/iterator.h
+  include/iterable/iterator.h
 )
 install(
   TARGETS iterable 
